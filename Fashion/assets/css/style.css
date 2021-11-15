@@ -1,0 +1,271 @@
+:root{
+    --primary : #22262A;
+    --secondary : #CF2929;
+    --contact-bg : #F2F8FC;
+    --footer-bg:#E7F5F8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+::selection{
+    color: #fff;
+    background-color: var(--secondary);
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.main-btn{
+    display: inline-block;
+    padding: .5rem 1.9rem;
+    background-color: var(--primary);
+    color: #fff;
+    border: 0;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .4s ease;
+}
+.main-btn:hover{
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+/* Heading Section */
+.heading-section h2{
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.heading-section p{
+    color: var(--primary);
+}
+/* Navbar */
+header{
+    background-color: #fff;
+    z-index: 9999;
+}
+header.active{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.navbar .navbar-brand{
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 28px;
+}
+.navbar .nav-link{
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-right: .8rem;
+}
+.navbar .nav-link:hover{
+    color: var(--secondary);
+}
+.navbar .navbar-toggler{
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+    font-size: 1.5rem;
+}
+.navbar .shop a{
+    color: var(--primary);
+    margin-right: 1rem;
+    font-size: 18px;
+}
+.navbar .shop a:hover{
+    color: var(--secondary);
+}
+
+/* Hero */
+.hero{
+    height: 600px;
+    width: 100%;
+    padding: 50px 0;
+    background: url(../img/hero-bg.png) no-repeat center;
+    background-size: cover;
+}
+.hero .hero-content h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.hero .hero-content h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.hero .hero-btn{
+    display: flex;
+    justify-content: center;
+}
+
+/* Women And Men Sections */
+.women-section .women-fashion-items > span,
+.men-section .men-fashion-items > span{
+    font-weight: 300;
+    color: var(--primary);
+    margin: 30px 0 15px;
+    display: inline-block;
+}
+.women-section .women-fashion-items a,
+.men-section .men-fashion-items a{
+    text-decoration: none;
+    display: block;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.women-section .women-fashion-items a:hover,
+.men-section .men-fashion-items a:hover{
+    color: var(--secondary);
+}
+.women-section .women-fashion-img,
+.men-section .men-fashion-img{
+    overflow: hidden;
+    cursor: pointer;
+}
+.women-section .women-fashion-img img,
+.men-section .men-fashion-img img{
+    width: 100%;
+}
+.women-section .women-fashion-img:hover img,
+.men-section .men-fashion-img:hover img{
+    transition: all .5s ease-in;
+}
+.women-section .women-fashion-img:hover img,
+.men-section .men-fashion-img:hover img{
+    transform: scale(1.1);
+}
+.women-section .women-fashion-items h3,
+.men-section .men-fashion-items h3{
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--primary);
+}
+.women-section .women-fashion-price span:last-of-type,
+.men-section .men-fashion-price span:last-of-type{
+    display: inline-block;
+    margin-left: 15px;
+    color: var(--secondary);
+    font-weight: 400;
+}
+
+/* Avon Section */
+.avon-style .avon-style-caption{
+    transform: translateY(-50px);
+    z-index: 45;
+}
+.avon-style .avon-style-caption img{
+    border-top: 25px solid #fff;
+    border-left: 25px solid #fff;
+}
+.avon-style .avon-style-caption span{
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    border-bottom: 1px solid var(--primary);
+}
+
+/* Tachen Section */
+.tachen-section{
+    height: 500px;
+    background: url(../img/tachen-bg.png) no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+.tachen-section .tachen-content h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.tachen-section .tachen-content h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact{
+    padding: 80px 0;
+    background-color: var(--contact-bg);
+}
+.contact h3{
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.contact .contact-content p{
+    font-size: 15px;
+    color: var(--primary);
+}
+.contact .contact-content .email-link{
+    color: var(--primary);
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid var(--primary);
+}
+.contact .contact-content .tel{
+    display: block;
+    margin-top: 10px;
+}
+.contact .contact-content .contact-icons a{
+    color: var(--primary);
+    margin-right: 5px;
+    font-size: 17px;
+}
+.contact .contact-content .contact-icons a:hover{
+    color: var(--secondary);
+}
+.contact .contact-form .input-email{
+    position: relative;
+}
+.contact .contact-form .input-email::placeholder{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--primary);
+}
+.contact .contact-form .submit-btn{
+    position: absolute;
+    right: 10px;
+    top : 5px;
+    border: 0;
+    font-weight: 600;
+    color: var(--primary);
+    background-color: transparent;
+}
+.contact .contact-lists ul{
+    list-style: none;
+    padding-left: 0;
+}
+.contact .contact-lists ul li.list-head a{
+    font-weight: bold;
+    color: var(--primary);
+}
+.contact .contact-lists ul li a{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 5px;
+    color: var(--primary);
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: var(--footer-bg);
+    color: var(--primary);
+    padding: 20px 0 10px;
+}

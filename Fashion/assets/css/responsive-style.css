@@ -1,0 +1,46 @@
+@media screen and (max-width:991px){
+    /* Navbar */
+    .navbar .navbar-nav,
+    .navbar .shop{
+        text-align: center;
+    }
+    .navbar .navbar-nav a{
+        margin-bottom: 10px;
+    }
+
+    /* Hero */
+    .hero{
+        height: 400px;
+        text-align: center;
+        padding: 70px 0 30px;
+    }
+
+    /* Tachen */
+    .tachen-section{
+        height: 400px;
+        text-align: center;
+        padding-top: 50px;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width:575px){
+    /* Hero */
+    .hero-btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Women and Men Sections */
+    .women-section .women-fashion-items,
+    .men-section .men-fashion-items 
+    {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .hero .hero-content h1{
+        font-size: 45px;
+    }
+}
