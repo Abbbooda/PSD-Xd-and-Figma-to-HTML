@@ -1,0 +1,41 @@
+@media screen and (max-width:991px){
+    /* Navbar */
+    .navbar .navbar-nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 55;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .navbar-nav .nav-link{
+        font-size: 25px;
+    }
+    /* Hero Section */
+    .hero .hero-content h1{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:767px){
+    /* Team */
+    .team .team-member{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:575px){
+    /* Navbar */
+    .navbar .navbar-brand{
+        font-size : 25px
+    }
+    /* Hero Section */
+    .hero .hero-content h1{
+        font-size: 35px;
+    }
+}
