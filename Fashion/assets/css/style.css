@@ -59,6 +59,7 @@ header.active{
     width: 100%;
     left: 0;
     top: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 .navbar .navbar-brand{
     color: var(--primary);
